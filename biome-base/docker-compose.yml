@@ -1,0 +1,4 @@
+services:
+  bio:
+    image: raspberry-dream-labs/biome-base
+
