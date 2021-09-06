@@ -1,0 +1,6 @@
+version: "3"
+services:
+  bio:
+    image: 99bd6c726856
+    command: bash -c "./biome-habitats/scripts/build-latest-reticulum.sh"
+

@@ -5,5 +5,3 @@ RUN chmod +x /usr/bin/bio
 RUN apt-get update && apt-get install -y \
 git \
 && rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/robert-rdl/biome-habitats.git
-
