@@ -5,3 +5,5 @@ RUN chmod +x /usr/bin/bio
 RUN apt-get update && apt-get install -y \
 git \
 && rm -rf /var/lib/apt/lists/*
+RUN bio pkg install biome/bio-studio/1.5.75
+RUN bio origin key download raspberry-dream-labs --url https://bldr.biome.sh

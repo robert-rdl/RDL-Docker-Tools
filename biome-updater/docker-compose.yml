@@ -1,6 +1,11 @@
 version: "3"
 services:
   bio:
-    image: 99bd6c726856
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args: 
+        HAB_AUTH_TOKEN: 0
+    privileged: true
     command: bash -c "./biome-habitats/scripts/build-latest-reticulum.sh"
 
